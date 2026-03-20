@@ -15,10 +15,6 @@ export function SubnucleoCard({ nucleoId, id, name, description, videosCount }: 
     <Link href={`/nucleo/${nucleoId}/${id}`}>
       <Card className="hover:shadow-lg transition-all duration-300 hover:border-primary cursor-pointer h-full">
         <CardHeader>
-          <div className="flex items-start justify-between">
-            <FolderOpen className="h-9 w-9 text-primary mb-2" />
-            <ChevronRight className="h-5 w-5 text-gray-400" />
-          </div>
           <CardTitle className="text-lg">{name}</CardTitle>
           <CardDescription>{description}</CardDescription>
         </CardHeader>

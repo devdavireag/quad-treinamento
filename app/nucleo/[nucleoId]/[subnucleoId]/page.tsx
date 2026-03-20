@@ -50,7 +50,6 @@ export default async function SubnucleoPage({ params }: PageProps) {
 
       <div className="mb-8">
         <div className="flex items-center gap-3 mb-4">
-          <FolderOpen className="h-10 w-10 text-primary" />
           <div>
             <h1 className="text-3xl font-bold text-gray-900">
               {subnucleo.name}
@@ -59,18 +58,6 @@ export default async function SubnucleoPage({ params }: PageProps) {
               {subnucleo.description}
             </p>
           </div>
-        </div>
-      </div>
-
-      <div className="flex items-center gap-3 mb-6 bg-primary/5 border border-primary/20 rounded-lg p-4">
-        <PlayCircle className="h-6 w-6 text-primary flex-shrink-0" />
-        <div>
-          <p className="font-semibold text-gray-900">
-            {subnucleo.videos.length} {subnucleo.videos.length === 1 ? 'vídeo disponível' : 'vídeos disponíveis'}
-          </p>
-          <p className="text-sm text-gray-600">
-            Materiais de treinamento e capacitação
-          </p>
         </div>
       </div>
 
@@ -96,28 +83,7 @@ export default async function SubnucleoPage({ params }: PageProps) {
         ))}
       </div>
 
-      <div className="mt-8 bg-gray-50 border border-gray-200 rounded-lg p-6">
-        <h3 className="font-semibold text-gray-900 mb-2">
-          Informações sobre o treinamento
-        </h3>
-        <p className="text-gray-700 mb-4">
-          {subnucleo.description}
-        </p>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
-          <div className="bg-white rounded-lg p-4 border border-gray-200">
-            <p className="text-sm text-gray-600 mb-1">Total de vídeos</p>
-            <p className="text-2xl font-bold text-primary">{subnucleo.videos.length}</p>
-          </div>
-          <div className="bg-white rounded-lg p-4 border border-gray-200">
-            <p className="text-sm text-gray-600 mb-1">Núcleo</p>
-            <p className="text-lg font-semibold text-gray-900">{nucleo.name.split(' - ')[0]}</p>
-          </div>
-          <div className="bg-white rounded-lg p-4 border border-gray-200">
-            <p className="text-sm text-gray-600 mb-1">Tipo</p>
-            <p className="text-lg font-semibold text-gray-900">Coordenadoria</p>
-          </div>
-        </div>
-      </div>
+      
     </div>
   );
 }

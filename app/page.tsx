@@ -8,13 +8,9 @@ export default function Home() {
     <div className="container mx-auto px-4 py-8">
       <div className="mb-8">
         <div className="flex items-center gap-3 mb-4">
-          <Building2 className="h-10 w-10 text-primary" />
           <div>
-            <h1 className="text-3xl font-bold text-gray-900">
-              Quad Concursos
-            </h1>
-            <p className="text-gray-600">
-              Selecione um núcleo para acessar os treinamentos
+            <p className="text-gray-600 ali">
+              Selecione um Núcleo para Acessar os Treinamentos
             </p>
           </div>
         </div>

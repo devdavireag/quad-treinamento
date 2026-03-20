@@ -5,11 +5,14 @@ export async function POST(request: NextRequest) {
   try {
     const body = await request.json()
     const { videoId, nucleoId, subnucleoId, userEmail } = body
+    console.log('videoId recebido:', videoId)
+console.log('chave buscada:', `BUNNY_VIDEO_${videoId.toUpperCase().replace(/-/g, '_')}`)
+console.log('GUID encontrado:', process.env[`BUNNY_VIDEO_${videoId.toUpperCase().replace(/-/g, '_')}`])
 
     // CONFIGURAÇÕES DO BUNNY STREAM
     // Você precisa configurar estas variáveis de ambiente
     const BUNNY_LIBRARY_ID = process.env.BUNNY_LIBRARY_ID || 'YOUR_LIBRARY_ID'
-    const BUNNY_VIDEO_ID = process.env[`BUNNY_VIDEO_${videoId.toUpperCase()}`] || videoId
+    const BUNNY_VIDEO_ID = process.env[`BUNNY_VIDEO_${videoId.toUpperCase().replace(/-/g, '_')}`] || videoId
     const BUNNY_TOKEN_KEY = process.env.BUNNY_TOKEN_KEY || 'YOUR_TOKEN_KEY'
     
     // AQUI VOCÊ PODE ADICIONAR VERIFICAÇÃO DE AUTENTICAÇÃO

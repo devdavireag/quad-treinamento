@@ -265,5 +265,71 @@ export const nucleosData: Nucleo[] = [
         ]
       }
     ]
-  }
+  },
+  {
+    id: "nop",
+    name: "N.Op - Núcleo Operacional",
+    description: "Responsável pela gestão estratégica e governança corporativa",
+    subnucleos: [
+      {
+        id: "ngg",
+        name: "N.G.G - Núcleo de Gestão   Geral",
+        description:"",
+        videos: [
+          {
+            id: "video-9",
+            title: "Metodologias de Ensino para Concursos",
+            duration: "28:15",
+            url: "#"
+          },
+          {
+            id: "video-10",
+            title: "Planejamento de Aulas e Cronogramas",
+            duration: "19:50",
+            url: "#"
+          },
+          {
+            id: "video-11",
+            title: "Avaliação de Aprendizagem",
+            duration: "22:30",
+            url: "#"
+          }
+        ]
+      },
+      
+    ]
+  },
+  {
+    id: "npp",
+    name: "N.P.P - Núcleo Pédagógico e de Produto",
+    description: "Responsável pela gestão estratégica e governança corporativa",
+    subnucleos: [
+      {
+        id: "npp",
+        name: "N.G.G - Núcleo de Gestão   Geral",
+        description:"",
+        videos: [
+          {
+            id: "video-9",
+            title: "Metodologias de Ensino para Concursos",
+            duration: "28:15",
+            url: "#"
+          },
+          {
+            id: "video-10",
+            title: "Planejamento de Aulas e Cronogramas",
+            duration: "19:50",
+            url: "#"
+          },
+          {
+            id: "video-11",
+            title: "Avaliação de Aprendizagem",
+            duration: "22:30",
+            url: "#"
+          }
+        ]
+      },
+      
+    ]
+  },
 ];

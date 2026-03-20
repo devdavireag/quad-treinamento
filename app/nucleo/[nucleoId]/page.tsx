@@ -34,7 +34,6 @@ export default async function NucleoPage({ params }: PageProps) {
 
       <div className="mb-8">
         <div className="flex items-center gap-3 mb-4">
-          <Folder className="h-10 w-10 text-primary" />
           <div>
             <h1 className="text-3xl font-bold text-gray-900">
               {nucleo.name}
