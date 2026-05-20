@@ -59,7 +59,7 @@ export function NucleoCard({ id, name, description, subnucleosCount }: NucleoCar
 
   return (
     <Link href={`/nucleo/${id}`}>
-      <Card className="hover:shadow-lg transition-all duration-300 hover:border-primary cursor-pointer h-full relative overflow-hidden">
+      <Card className="hover:shadow-lg transition-all duration-300 cursor-pointer h-full relative overflow-hidden">
 
         {/* Diagonal colorida — sem position, fica atrás naturalmente */}
         <div

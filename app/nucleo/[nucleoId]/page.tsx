@@ -39,20 +39,17 @@ export default async function NucleoPage({ params }: PageProps) {
               {nucleo.name}
             </h1>
             <p className="text-gray-600">
-              {nucleo.description}
             </p>
           </div>
         </div>
-      </div>
-
-      <div className="mb-6">
-        <h2 className="text-xl font-semibold text-gray-900 mb-2">
-          Coordenadorias e Setores
-        </h2>
+        <div className="mb-6">
         <p className="text-gray-600">
           Selecione uma coordenadoria para acessar os materiais de treinamento
         </p>
       </div>
+      </div>
+
+      
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {nucleo.subnucleos.map((subnucleo) => (
