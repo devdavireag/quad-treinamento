@@ -51,10 +51,10 @@ export default async function SubnucleoPage({ params }: PageProps) {
       <div className="mb-8">
         <div className="flex items-center gap-3 mb-4">
           <div>
-            <h1 className="text-3xl font-bold text-gray-900">
+            <h1 className="text-3xl font-bold text-white-900">
               {subnucleo.name}
             </h1>
-            <p className="text-gray-600">
+            <p className="text-white-600">
               {subnucleo.description}
             </p>
           </div>
@@ -62,10 +62,10 @@ export default async function SubnucleoPage({ params }: PageProps) {
       </div>
 
       <div className="mb-6">
-        <h2 className="text-xl font-semibold text-gray-900 mb-2">
+        <h2 className="text-xl font-semibold text-gray-300 mb-2">
           Vídeos de Treinamento
         </h2>
-        <p className="text-gray-600">
+        <p className="text-gray-300">
           Assista aos vídeos para se capacitar nas atividades desta coordenadoria
         </p>
       </div>

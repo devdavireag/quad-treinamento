@@ -35,15 +35,15 @@ export default async function NucleoPage({ params }: PageProps) {
       <div className="mb-8">
         <div className="flex items-center gap-3 mb-4">
           <div>
-            <h1 className="text-3xl font-bold text-gray-900">
+            <h1 className="text-3xl font-bold text-white-900">
               {nucleo.name}
             </h1>
-            <p className="text-gray-600">
+            <p className="text-white-600">
             </p>
           </div>
         </div>
         <div className="mb-6">
-        <p className="text-gray-600">
+        <p className="text-white-600">
           Selecione uma coordenadoria para acessar os materiais de treinamento
         </p>
       </div>
@@ -62,16 +62,6 @@ export default async function NucleoPage({ params }: PageProps) {
             videosCount={subnucleo.videos.length}
           />
         ))}
-      </div>
-
-      <div className="mt-8 bg-gray-50 border border-gray-200 rounded-lg p-6">
-        <h3 className="font-semibold text-gray-900 mb-2">
-          Sobre este núcleo
-        </h3>
-        <p className="text-gray-700">
-          {nucleo.description}. Este núcleo possui {nucleo.subnucleos.length} {nucleo.subnucleos.length === 1 ? 'coordenadoria' : 'coordenadorias'} com 
-          materiais de treinamento específicos para cada área de atuação.
-        </p>
       </div>
     </div>
   );

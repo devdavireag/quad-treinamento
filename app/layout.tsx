@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
+import "./css/globals.css";;
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 
@@ -17,8 +17,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR">
-      <body className={`${inter.className} min-h-screen flex flex-col`}>
+    <html lang="pt-BR" className="dark">
+      <body className={`${inter.className} min-h-screen flex flex-col bg-background`}>
         <Header />
         <main className="flex-1">
           {children}

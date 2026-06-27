@@ -9,7 +9,7 @@ export default function Home() {
       <div className="mb-8">
         <div className="flex items-center gap-3 mb-4">
           <div>
-            <p className="text-gray-600 ali">
+            <p className="text-white-600 ali">
               Selecione um Núcleo para Acessar os Treinamentos
             </p>
           </div>
@@ -22,8 +22,6 @@ export default function Home() {
             key={nucleo.id}
             id={nucleo.id}
             name={nucleo.name}
-            description={nucleo.description}
-            subnucleosCount={nucleo.subnucleos.length}
           />
         )
         )

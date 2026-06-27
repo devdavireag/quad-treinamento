@@ -245,19 +245,7 @@ export function VideoPlayerBunny({
         {/* Camada de proteção invisível */}
         <div className="absolute inset-0 pointer-events-none" style={{ userSelect: 'none' }} />
       </div>
-
-      {/* Informações de monitoramento */}
-      <div className="p-4 bg-blue-50 border border-blue-200 rounded-lg text-sm">
-        <p className="font-semibold text-blue-800 mb-2">
-          🛡️ Sistema de proteção profissional ativo
-        </p>
-        <ul className="text-blue-700 space-y-1">
-          <li>• Vídeo hospedado em CDN global (Bunny Stream)</li>
-          <li>• Token de autenticação temporário</li>
-          <li>• Proteção contra download e compartilhamento</li>
-          <li>• Monitoramento de atividades em tempo real</li>
-        </ul>
-      </div>
+      
     </div>
   )
 }
